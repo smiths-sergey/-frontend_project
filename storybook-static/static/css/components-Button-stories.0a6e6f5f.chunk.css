@@ -1,0 +1,25 @@
+.Button_is-disabled__E4d1M{
+   background-color: gray;
+   opacity: 0.5; 
+}
+
+.Button_primary__SlBQU{
+    background-color: #1677ff;
+    color: white;
+    cursor:pointer
+}
+
+.Button_secondary__dOXrE{
+    background-color: green;
+    color: white;
+    cursor:pointer
+}
+
+.Button_btn__sqocL {
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+/*# sourceMappingURL=components-Button-stories.0a6e6f5f.chunk.css.map*/

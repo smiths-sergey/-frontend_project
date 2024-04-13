@@ -1,0 +1,134 @@
+240330132504616649,pg_dump: last built-in OID is 16383
+
+240330132504620713,pg_dump: reading extensions
+
+240330132504626432,pg_dump: identifying extension members
+
+240330132504629109,pg_dump: reading schemas
+
+240330132504629946,pg_dump: reading user-defined tables
+
+240330132504642522,pg_dump: reading user-defined functions
+
+240330132504656400,pg_dump: reading user-defined types
+
+240330132504660650,pg_dump: reading procedural languages
+
+240330132504663267,pg_dump: reading user-defined aggregate functions
+
+240330132504664318,pg_dump: reading user-defined operators
+
+240330132504668751,pg_dump: reading user-defined access methods
+
+240330132504669690,pg_dump: reading user-defined operator classes
+
+240330132504672761,pg_dump: reading user-defined operator families
+
+240330132504676874,pg_dump: reading user-defined text search parsers
+
+240330132504680339,pg_dump: reading user-defined text search templates
+
+240330132504684093,pg_dump: reading user-defined text search dictionaries
+
+240330132504688069,pg_dump: reading user-defined text search configurations
+
+240330132504691926,pg_dump: reading user-defined foreign-data wrappers
+
+240330132504695871,pg_dump: reading user-defined foreign servers
+
+240330132504699251,pg_dump: reading default privileges
+
+240330132504700814,pg_dump: reading user-defined collations
+
+240330132504703092,pg_dump: reading user-defined conversions
+
+240330132504705750,pg_dump: reading type casts
+
+240330132504710123,pg_dump: reading transforms
+
+240330132504710784,pg_dump: reading table inheritance information
+
+240330132504711900,pg_dump: reading event triggers
+
+240330132504713703,pg_dump: finding extension tables
+
+240330132504717029,pg_dump: finding inheritance relationships
+
+240330132504717721,pg_dump: reading column info for interesting tables
+
+240330132504719622,pg_dump: finding table default expressions
+
+240330132504722809,pg_dump: flagging inherited columns in subtables
+
+240330132504723422,pg_dump: reading partitioning data
+
+240330132504725553,pg_dump: reading indexes
+
+240330132504729995,pg_dump: flagging indexes in partitioned tables
+
+240330132504731163,pg_dump: reading extended statistics
+
+240330132504733376,pg_dump: reading constraints
+
+240330132504733931,pg_dump: reading triggers
+
+240330132504736375,pg_dump: reading rewrite rules
+
+240330132504738425,pg_dump: reading policies
+
+240330132504738981,pg_dump: reading row-level security policies
+
+240330132504740650,pg_dump: reading publications
+
+240330132504742171,pg_dump: reading publication membership of tables
+
+240330132504745792,pg_dump: reading publication membership of schemas
+
+240330132504748859,pg_dump: reading subscriptions
+
+240330132504753253,pg_dump: reading large objects
+
+240330132504754537,pg_dump: reading dependency data
+
+240330132504774160,pg_dump: saving encoding = UTF8
+
+240330132504774711,pg_dump: saving standard_conforming_strings = on
+
+240330132504775257,pg_dump: saving search_path = 
+
+240330132504781651,pg_dump: creating TABLE "public.tags"
+
+240330132504782349,pg_dump: creating SEQUENCE "public.tags_id_seq"
+
+240330132504782833,pg_dump: creating SEQUENCE OWNED BY "public.tags_id_seq"
+
+240330132504783123,pg_dump: creating TABLE "public.todos"
+
+240330132504783705,pg_dump: creating SEQUENCE "public.todos_id_seq"
+
+240330132504784156,pg_dump: creating SEQUENCE OWNED BY "public.todos_id_seq"
+
+240330132504784650,pg_dump: creating DEFAULT "public.tags id"
+
+240330132504785191,pg_dump: creating DEFAULT "public.todos id"
+
+240330132504785577,pg_dump: processing data for table "public.tags"
+
+240330132504785871,pg_dump: dumping contents of table "public.tags"
+
+240330132504786453,pg_dump: processing data for table "public.todos"
+
+240330132504786893,pg_dump: dumping contents of table "public.todos"
+
+240330132504787326,pg_dump: executing SEQUENCE SET tags_id_seq
+
+240330132504787719,pg_dump: executing SEQUENCE SET todos_id_seq
+
+240330132504788029,pg_dump: creating CONSTRAINT "public.tags tags_pk"
+
+240330132504788503,pg_dump: creating CONSTRAINT "public.todos todos_pk"
+
+240330132504790575,pg_dump: creating CONSTRAINT "public.todos todos_title_key"
+
+240330132504792156,pg_dump: creating FK CONSTRAINT "public.todos todos_tag_fkey"
+

@@ -1,18 +1,15 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import MainPage from "./pages/MainPage";
-import CatalogPage from "./pages/CatalogPage";
-import CardPage from "./pages/CardPage";
+import { BrowserRouter } from "react-router-dom";
+import { Provider } from "react-redux";
+import { store } from "./stores/store";
+import Router from "./pages/Router";
 
 function App() {
   return (
-    // <p>APP</p>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<MainPage />} />
-        <Route path="/catalog" element={<CatalogPage />} />
-        <Route path="/catalog/:id" element={<CardPage />} />
-      </Routes>
-    </BrowserRouter>
+    <Provider store={store}>
+      <BrowserRouter>
+        <Router></Router>
+      </BrowserRouter>
+    </Provider>
   );
 }
 

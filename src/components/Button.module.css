@@ -1,0 +1,26 @@
+
+
+.primary{
+    background-color: #1677ff;
+    color: white;
+    
+}
+
+.secondary{
+    background-color: green;
+    color: white;
+    
+}
+
+.btn {
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor:pointer
+}
+.is-disabled{
+    background-color: gray;
+    opacity: 0.5;
+    cursor:default;
+ }
