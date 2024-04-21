@@ -1,0 +1,40 @@
+version: "3.1"
+
+services:
+  base_postgres:
+    image: postgres:16.1
+    container_name: base_postgres
+    restart: always
+    volumes:
+      - ./backend/database/storage/db:/var/lib/postgresql/data
+    environment:
+      - PGDATA=/var/lib/postgresql/data/pgdata
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=1234
+    ports:
+      - 9000:5432
+    networks:
+      - postgres
+
+  base_pgadmin:
+    image: dpage/pgadmin4:7.8
+    container_name: base_pgadmin
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=ya@ya.ru
+      - PGADMIN_DEFAULT_PASSWORD=1234
+    volumes:
+      - ./backend/database/storage/pgadmin:/var/lib/pgadmin
+    ports:
+      - 9001:80
+    restart: unless-stopped
+    networks:
+      - postgres
+
+networks:
+  postgres:
+    name: bridge-mock-shop
+    driver: bridge
+
+volumes:
+  postgres:
+  pgadmin:

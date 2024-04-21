@@ -1,0 +1,29 @@
+.page {
+  width: 1000px;
+  margin: 0 auto;
+  
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  
+}
+
+.title {
+  text-align: center;
+}
+
+.button{
+  width: auto;
+  padding: 5px 10px;  
+  
+}
+.checkbox{
+  width: auto;
+}
+
+  
+ 
